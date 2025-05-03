@@ -45,7 +45,7 @@ a {
 
 aside {
     /* padding: 200px; */
-    background: cyan;
+    background: #229ac0;
 }
 
 article {
@@ -64,4 +64,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    background: #066085;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: bold;
 }
