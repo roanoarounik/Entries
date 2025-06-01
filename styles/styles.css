@@ -37,19 +37,17 @@ a {
 }
 
 .boxesSection {
-    display: grid;
-    grid-template-columns: 33% 1fr;
-    min-height: 500px;
     gap: 20px;
+    display: grid;
+    min-height: 500px;
+    grid-template-columns: 33% 1fr;
 }
 
 aside {
-    /* padding: 200px; */
     background: #229ac0;
 }
 
 article {
-    /* padding: 200px 500px; */
     background: darkgreen;
 }
 
@@ -75,4 +73,25 @@ footer {
 
 .bold {
     font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .headerItems {
+        grid-gap: 15px;
+        flex-direction: column;
+    }
+    .menuList {
+        display: grid;
+        padding: 15px 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .spanLink {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 400px) {
+    .boxesSection {
+        grid-template-columns: 1fr;
+    }
 }
